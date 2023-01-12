@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    font-family: 'Moon Dance', cursive;
+    padding: 0;
+}
+
+.text-primary{
+    color: #FD6E0A;
+}
+
+.btn-primary{
+    height: 64px;
+    color: aliceblue;
+    border-radius: 5px;
+    background-color: #FD6E0A;
+    border: 0;
+    padding: 18px 35px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.header{
+    background-color: #FFF8F3;
+    background-image: url('../images/header_bg.png'),url(../images/developer.png);
+    background-repeat: no-repeat;
+    background-position: bottom right,left;
+    
+}
+/* hrader and navision style */
+.header img{
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 51px 226px;
+}
+.nav-title{
+    font-weight: 800;
+    font-size: 45px;
+}
+nav ul{
+    display: flex;
+    margin-left: 52px;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+    margin-left: 52px;
+}
+.text-primary{
+    color: #FD6E0A;
+}
+/* baner style */
+.beaner{
+    display: flex;
+    align-items: center;
+    margin: 0px 200px;
+}
+.baner-tital{
+    font-weight: 700;
+    font-size: 85px;
+}
+.baner-sub-taitle{
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.baner-dispration{
+    color: #757575;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.baner-button{
+
+}
+
+/* main section */
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* about section style */
+
+.about{
+    margin-top: 135px;
+    font-size: 35px;
+    font-weight: 700;
+    background: #FFF8F3;
+    border-radius: 10px;
+    padding: 130px 150px;
+    text-align: center;
+    margin-bottom: 135px;
+
+}
+.section-tital{
+    
+    margin-bottom: 35px;
+}
+
+.secton-dispertoin{
+    color: #757575;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.about-info-container{
+    display: flex;
+    font-size: 15px;
+    justify-content: space-around;
+}
+.about-info .info-tatile{
+    font-size: 20px;
+    color: #757575;
+}
+ .about-info.info-decpartion{
+    font-weight: 700;
+    font-size: 20px;
+    color: #474747;
+    
+
+}
+/* what I do style */
+.what-i-do{
+    margin-top: 130px;
+}
+.section-tital{
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.section-dispration{
+    color: #757575;
+    font-weight: 400;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.skills-contatiner{
+    display: flex;
+    gap: 25px;
+}
+.skill-title{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.skill-dispration{
+    color: #757575;
+}
+.skill{
+    background: #FFFFFF;
+    box-shadow: 0px 6px 50px #0000000f;
+    border-radius: 5px;
+    padding: 30px;
+}
+/* ragimue style */
+.section-tatile{
+    font-weight: 700;
+    margin-top: 130px;
+    font-size: 35px;
+    text-align: center;
+}
+.ragime-contant{
+    margin-top: 35px;
+    display: flex;
+    gap: 24px;
+}
+.ragime-title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.title{
+    font-weight: 700;
+font-size: 25px;
+color: #474747;
+}
+.sub-title{
+    font-weight: 600;
+font-size: 20px;
+color: #757575;
+}
+.dispratione{
+    font-weight: 400;
+font-size: 16px;
+color: #757575;
+
+}
+
+.ragime-button{
+    margin-top: 30px;
+    text-align: center;
+}
+/* contact style */
+.contact{
+    display: flex;
+    margin-top: 50px;
+    /* justify-content: center; */
+    gap: 120px;
+    background: #FFF8F3;
+    padding: 150px 200px;
+}
+.contact.section-titals{
+    text-align: center;
+}
+.contact,input[type="text"],[type="email"],textarea{
+    margin-bottom: 20px;
+    border: 0;
+    width: 80%;
+    padding: 14px 35px;
+}
+.contact a{
+    text-decoration: none;
+    
+}
+.contact-dispration{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #474747;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+input{
+    height: 65px;
+    
+}
+@media screen and (max-width:576px) {
+    .header{
+        background-image: none;
+    }
+    nav,
+    .beaner, 
+    .skills-contatiner,
+    .ragime-contant,
+    .about-info-container,
+    .contact{
+        flex-direction: column;
+        gap: 20px;
+        padding:10px 20px;
+    }
+    .beaner{
+        margin: 20px;
+    }
+    .beaner img{
+        width: 100%;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-end;
+    }
+    .about,.contact{
+        padding: 20px;
+        
+    }
+    /* .contact,input[type="text"],[type="email"],textarea{
+        padding: 0 0 0 5px;
+    } */
+}
+
+@media screen and(min-width:577px) and(max-width:992px) {
+    .about,.contact{
+        padding: 20px;
+        gap: 10px;
+    }
+    .contact.beaner{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    nav li{
+        margin-left: 0;
+        padding-left: 10px;
+    }
+}
